@@ -6,6 +6,7 @@ from sys import argv as argument
 from pathlib import Path
 
 try:
+   # print(argument)
     file_path=Path(argument[2])
     if(file_path.is_file()):
         #print(file_path)

@@ -6,10 +6,10 @@ from sys import argv as argument
 from pathlib import Path
 
 try:
-    file_path=Path(argument[1])
+    file_path=Path(argument[2])
     if(file_path.is_file()):
         #print(file_path)
-        img_upload_url = "https://e-maligai.com/api/vsm_chrompet/imageUpload.php"
+        img_upload_url = argument[1]
         with open(str(file_path), "rb") as image_file:
 
             if(os.name=="posix"):
